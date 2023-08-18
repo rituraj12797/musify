@@ -1,0 +1,152 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    height: 99vh;
+    width: 100%;
+}
+
+.skip
+{
+    height: 10%;
+    font-size: 1vw;
+    
+}
+.wrapper
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./assets/background_guitar.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.login
+{
+    height: 80vh;
+    width: min(400px,80%);
+    background-color: rgb(37, 37, 37);
+    border-radius: 1rem;
+    display: grid;
+    grid-template-rows: repeat(7,1fr);
+    
+    align-content:space-evenly;
+}
+.blocks
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+}
+.insider
+{
+    height: 75%;
+    width: 90%;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4vh;
+}
+.insider1
+{
+    width: 82%;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.block
+{
+    background-color: grey;
+    height: 11%;
+    width: 23%;
+}
+.insider2
+{
+    font-size: min(5vw,24px);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.insider4,.insider5,.insider6
+{
+    font-size: min(1.9vw,10px);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intext
+{
+    margin-bottom: 1vh;
+    width: 80%;
+   display: flex;
+   justify-content: start;
+}
+.skip
+{
+    font-size: min(1.9vw,10px);
+    width: 80%;
+    text-align: end;
+}
+#logo
+{
+    height: min(15vh,100px);
+}
+input[type="text"]
+{
+   width: 80%;
+   height: 70%;
+   border-radius: 4vh;
+   padding-left:0.7vw;
+   border: none;
+}
+input[type="text"]:focus
+{
+    outline: none;
+}
+.insider7
+{
+    justify-content: center;
+}
+#back,#next{
+    height: 70%;
+    width: 40%;
+    border-radius: 5vh;
+    background-color: black;
+    font-size: min(4vw,16px);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+#next
+{
+    margin-left: 0.5vw;
+    background-color: red;
+}
+#back
+{
+    margin-right: 0.5vw;
+}
+#back:active,#next:active
+{
+    filter: brightness(0.9);
+}
